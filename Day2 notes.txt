@@ -1,0 +1,412 @@
+=============================================================================================
+
+
+Ubuntu Server 24.04 LTS (HVM), SSD Volume Type
+
+
+
+
+
+ubuntu@ip-172-31-92-49:/$ history
+    1  clear
+    2  cat /etc/os-release
+    3  clear
+    4  pwd
+    5  cd ..
+    6  pwd
+    7  cd ..
+    8  pwd
+    9  ls
+   10  pwd
+   11  ls
+   12  cd home
+   13  ls
+   14  pwd
+   15  clear
+   16  ls
+   17  cd /
+   18  pwd
+   19  ls
+   20  cd bin
+   21  ls
+   22  cd ..
+   23  ls
+   24  ls -ltr
+   25  pwd
+   26  ls
+   27  clear
+   28  pwd
+   29  ls
+   30  s -l
+   31  ls -l
+   32  pwd
+   33  cd usr/
+   34  pwd
+   35  ls
+   36  ls -l
+   37  cd bin/
+   38  ls -
+   39  ls -l
+
+   42  clear
+   43  pwd
+   44  cd ..
+   45  pwd
+   46  cd ..
+   47  ls
+   48  pwd
+   49  cd /etc/
+   50  pwd
+   51  ls -l
+   52  clear
+   53  pwd
+   54  cd /
+   55  ls
+   56  pwd
+   57  ls
+   58  cd root/
+   59  systemctl restart ssh
+
+
+
+
+
+
+=============================================
+
+touch , vi : create a file
+
+mv : rename , moving
+
+
+ cp, touch , vi , mkdir , rmdir , cat , rm -rf 
+ 
+ 
+ ubuntu@ip-172-31-92-49:~$ history
+    1  apt install tree
+    2  sudo apt instal tree
+    3  sudo snap instal tree
+    4  sudo snap install tree
+    5  clear
+
+ 
+root@ip-172-31-92-49:/home/test# history
+    1  apt install tree
+    2  snap install tree
+    3  clear
+    4  exit
+    5  clear
+    6  ls
+    7  cd /home/
+    8  ls
+    9  ls -ltr
+   10  cat /etc/groups
+   11  cat /etc/group
+   12  clear
+   13  ls
+   14  tree
+   15  cd ubuntu/
+   16  ls
+   17  cd ..
+   18  ls
+   19  tree
+   20  ls -ltr
+   21  chmod o+rw ubuntu/
+   22  ls -ltr
+   23  tree
+   24  chmod o-rw ubuntu/
+   25  clear
+   26  ls -ltr
+   27  ls
+   28  ls test/
+   29  pwd
+   30  tree
+   31  touch test/file1
+   32  ls test/
+   33  pwd
+   34  cd test/
+   35  touch file2
+   36  ls la
+   37  ls -la
+   38  clear
+   39  pwd
+   40  cd ..
+   41  ls
+   42  tree
+   43  ls
+
+
+ rm -rf "im raman"
+   12  mkdir folder2
+   13  ls
+   14  rmdir folder2/
+   15  ls
+   16  rm -rf file1
+
+
+ ls
+   18  history
+   19  clear
+   20  ls
+   21  mkdir superman batman flash
+   22  ls
+   23  mkdir -p test/test1/test2
+   24  ls
+   25  tree
+   26  rmdir test
+   27  rmdir -p test
+   28  rmdir -p test/test1/test2
+
+===============================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Assessmnt : cp, touch , vi , mkdir , rmdir
+
+Note : Do the below activity in home directory:
+
+---create a file jerry , george , bush in your home directory( /home/rkhanna)
+touch jerry 
+touch george
+
+
+ls -ltr
+
+---copy the jerry file to create a new file called "lex"
+cp jerry lex
+
+---likewise copy jerry to new files named "clark" , "louis" 
+
+cp jerry clark
+
+cp jerry louis
+
+----do longlist and see if the files are created or not
+
+ls -ltr
+
+---- try creating multiple files through touch command
+
+touch bark lisa happy
+
+ls -ltr
+
+
+----try creating a file "homer" with vi command 
+
+vi homer
+
+---to get out of vi editor , press escape and than " :wq! "
+---file "homer" will be created.
+
+ls -ltr 
+
+-----try creating a directory using mkdir
+
+mkdir hellohi
+
+ls -ltr
+
+----create multiple directories 
+
+mkdir superman batman flash
+
+ls -ltr
+
+
+----create multiple files recursively 
+
+mkdir -p test/test1/test2
+
+
+----remove a directory 
+
+rmdir "directoryname" (empty directories)
+
+------------
+
+vi editor :
+    
+    vi ramanfile 
+    
+    -- go t indert mode by pressig i
+    
+    -- make the changes i ur file 
+    
+    -- get out of insert ode by pressing ecs
+    
+    :wq! : save and exit
+    :q! : exit without saving
+
+
+
+=============================================
+
+
+
+
+
+
+extra :
+
+adduser raman
+systemctl status ssh
+    7  clear
+    8  vi /etc/ssh/sshd_config
+    9  systemctl restart ssh
+   10  systemctl daemon-reload
+
+
+passwd raman
+passwd root
+
+
+
+ssh root@ec2-184-72-113-168.compute-1.amazonaws.com
+
+
+
+====================================================
+
+soft link_navgation :
+    
+    
+     17  pwd
+   18  ls
+   19  cd home/
+   20  ls
+   21  cd raman
+   22  ls
+   23  vi ramanfile
+   24  ls
+   25  cat ramanfile
+   26  vi ramanfile
+   27  cat ramanfile
+   28  ls
+   29  cat ramanfile
+   30  cd ..
+   31  ls
+   32  cd ubuntu/
+   33  ls
+   34  cd superman/
+   35  man ls
+   36  man mkdir
+   37  ln -s /home/raman/ramanfile
+   38  ls -ltr
+   39  ls
+   40  cat ramanfile
+   41  pwd
+   42  cd /home/raman/
+   43  ls
+   44  vi ramanfile
+   45  cd /home/ubuntu/superman/
+   46  ls
+   47  cat ramanfile
+   48  cd /home/raman/
+   49  ls
+   50  rm -rf ramanfile
+   51  cd /home/ubuntu/superman/
+   52  ls
+   53  cat ramanfile
+
+===============================================
+
+hard link :
+
+ vi hard
+   63  cat hard
+   64  ln /home/raman/
+   65  ln /home/raman/testfile
+   66  cd /home/raman/
+   67  ls
+   68  ln /home/ubuntu/superman/hard
+   69  ls -ltr
+   70  ls
+   71  cat hard
+   72  cd /home/ubuntu/superman/
+   73  ls
+   74  cat hard
+   75  vi hard
+   76  cd /home/raman/
+   77  ls
+   78  cat hard
+   79  cd /home/ubuntu/superman/hard
+   80  cd /home/ubuntu/superman/
+   81  ls
+   82  rm -rf hard
+   83  cd /home/raman
+   84  ls
+   85  cat hard
+   86  ls -ltr
+   87  cd /home/ubuntu/superman/
+
+
+
+
+otehr navigational commands :
+
+
+
+ uptimre
+   96  uptime
+   97  clear
+   98  ls
+   99  ls -ltr
+  100  alias ls=ls -ltr
+  101  alias ls='ls -ltr'
+  102  alias ls
+  103  ls
+  104  alias mkdir
+  105  alias mk=mkdir
+  106  mk myfiletesrt
+  107  ls
+  108  alias --help
+  109  mk
+  110  alias nk
+  111  alias mk
+  112  unalias mk
+  113  alias mk
+  114  mk
+  115  mkdir
+
+
+
+
+116  history
+  117  ls
+  118  clear
+  119  df -h
+  120  clear
+  121  free -h
+  122  lsblk
+  123  df -h
+  124  clear
+  125  lscpu
+  126  clear
+  127  ls
+  128  file jerry
+  129  file myfiletesrt/
+
+
+
+==========================================================
+
+
+
+
+
+
+
